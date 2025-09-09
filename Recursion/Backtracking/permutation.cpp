@@ -15,8 +15,12 @@ void getPermutation(vector<int> &arr, vector<vector<int>> &allPermutation, vecto
     for (int i = index; i < arr.size(); i++)
     {
         swap(arr[index], arr[i]);
+        ans.push_back(1);
         getPermutation(arr, allPermutation, ans, index + 1);
+                ans.push_back(2);
+
         swap(arr[i], arr[index]);
+
     }
 };
 
@@ -28,7 +32,9 @@ int main()
 
     getPermutation(arr, allPermutation, ans, 0);
 
-
+for(int n: ans){
+    cout<<n<<" ,";
+}
       for(auto val:allPermutation){
         cout<<"{";
         for(int num:val){
