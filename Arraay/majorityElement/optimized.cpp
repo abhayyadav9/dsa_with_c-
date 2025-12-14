@@ -11,8 +11,8 @@ using namespace std;
 int main()
 
 {
-    vector<int> vect = {1, 2, 1, 2, 1, 2,2,2,2,2, 1, 1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3};
-int n = vect.size();
+    vector<int> vect = {1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 1, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3};
+    int n = vect.size();
 
     sort(vect.begin(), vect.end());
 

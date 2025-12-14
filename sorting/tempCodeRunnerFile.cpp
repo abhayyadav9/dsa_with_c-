@@ -36,16 +36,18 @@ void merge(vector<int> &nums, int start, int mid, int end)
         j++;
     }
 
-    for (int k = 0; k < temp.size(); k++)
-    {
-        nums[k + start] = temp[k];
+    for(int k =0; k<temp.size();k++){
+        nums[k +start] = temp[k];
     }
+
+
+
 }
 
 void mergeSort(vector<int> &nums, int start, int end)
 {
 
-    if (start >= end)
+    if (start <= end)
         return;
 
     int mid = start + (end - start) / 2;

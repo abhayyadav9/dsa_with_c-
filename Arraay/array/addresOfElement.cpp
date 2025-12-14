@@ -10,7 +10,7 @@ int main()
     {
         if (array[i] == 7)
         {
-         delete.array[i];
+        
             found = i + 1;
         }
     };
